@@ -105,8 +105,8 @@
             let b3Blue = document.getElementById("b3").classList.contains("bg-primary")
 
             if (b1Red && b2Red && b3Red) {
+                document.getElementById("root").innerHTML = `   <div class="alert alert-danger">Red Wins</div>`
                 console.log("🏆Hurry Red is winner");
-                document.getElementById("root").innerHTML = `<div class="alert alert-primary>Red Wins</div>`
                 setTimeout(function () {
                     document.getElementById("root").innerHTML = ""
                 }, 2000)
@@ -114,8 +114,8 @@
                 return true
             }
             if (b1Blue && b2Blue && b3Blue) {
+                document.getElementById("root").innerHTML = `<div class="alert alert-primary">Blue Wins</div>`
                 console.log("🏆Hurry Blue is winner");
-                document.getElementById("root").innerHTML = `<div class="alert alert-primary>Blue Wins</div>`
                 setTimeout(function () {
                     document.getElementById("root").innerHTML = ""
                 }, 2000)
